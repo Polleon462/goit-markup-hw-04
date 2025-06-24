@@ -1,0 +1,179 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+/* -----BODY----- */
+.body {
+}
+
+.page-container {
+  min-width: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+.section {
+  padding: 120px 0;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navy-blue);
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+/* -----------------HEADER------------------ */
+.header {
+}
+.nav {
+}
+.logo {
+}
+.logo-span {
+}
+.nav-list {
+}
+.nav-list-item {
+}
+.nav-list-item-link {
+}
+.addres {
+}
+.addres-list {
+}
+.addres-list-item {
+}
+.addres-list-item-link {
+}
+
+/* -----------------MAIN-------------------- */
+
+/* -----------HERO------------ */
+
+.hero {
+}
+.hero-title {
+}
+.hero-btn {
+}
+/* -----------BENEFITES------------ */
+
+.benefites {
+}
+.benefites-title {
+}
+.benefites-list {
+}
+.benefites-list-item {
+}
+.benefites-list-item-title {
+}
+.benefites-list-item-text {
+}
+
+/* -----------TEAM------------ */
+
+.team {
+}
+.team-title {
+}
+.team-list {
+}
+.team-list-item {
+}
+.team-list-item-img {
+}
+.team-list-item-title {
+}
+.team-list-item-text {
+}
+.sublist {
+}
+.sublist-item {
+}
+.icon {
+}
+
+/* -----------PORTFOLIO------------ */
+
+.portfolio {
+}
+.portfolio-title {
+}
+.portfolio-list {
+}
+.portfolio-list-item {
+}
+.portfolio-list-image {
+}
+.portfolio-list-subtitle {
+}
+.portfolio-list-text {
+}
+.overlay {
+}
+/* -----------------FOOTER------------------ */
+.footer {
+}
+
+.white-logo {
+}
+.footer-text {
+}
+.footer-subtitle {
+}
+.social-list {
+}
+.social-list-item {
+}
+.icon {
+}
