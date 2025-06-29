@@ -465,7 +465,8 @@ h3 {
 .footer .sublist {
   gap: 16px;
 }
-.footer .social-links:hover {
+.footer .social-links:hover,
+.footer .social-links:focus {
   background-color: #31d0aa;
 }
 .icon {
