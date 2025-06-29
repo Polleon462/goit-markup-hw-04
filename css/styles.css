@@ -321,12 +321,9 @@ h3 {
   gap: 24px;
 }
 .sublist-item {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   width: 40px;
   height: 40px;
-  /* background-color: #4d5ae5; */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links:hover,
@@ -363,8 +360,7 @@ h3 {
   gap: 24px;
 }
 .portfolio-list-item {
-  transition: box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms,
-    cursore cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-card {
@@ -380,6 +376,39 @@ h3 {
 .card-img {
   position: relative;
   overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4d5ae5;
+  color: #f4f4fd;
+
+  padding: 40px 32px;
+
+  font-weight: 400;
+  font-size: 16px;
+
+  transform: translateY(100%);
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.portfolio-list-item:hover,
+.portfolio-list-item:focus {
+  cursor: pointer;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.portfolio-list-item:hover .overlay,
+.portfolio-list-item:focus .overlay {
+  transform: translateY(0%);
+}
+
+.portfolio-list-subtitle {
+  margin-bottom: 8px;
+}
+.portfolio-list-text {
 }
 
 /* .card-img::before {
@@ -398,38 +427,6 @@ h3 {
 /* .card-img:hover::before {
   opacity: 1;
 } */
-
-.portfolio-list-subtitle {
-  margin-bottom: 8px;
-}
-.portfolio-list-text {
-}
-.overlay {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #4d5ae5;
-  padding: 40px 32px;
-
-  font-weight: 400;
-  font-size: 16px;
-
-  color: #f4f4fd;
-  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
-.portfolio-list-item:hover,
-.portfolio-list-item:focus {
-  cursor: pointer;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
-.portfolio-list-item:hover .overlay,
-.portfolio-list-item:focus .overlay {
-  transform: translateY(-100%);
-}
-
 /* -----------------FOOTER------------------ */
 .footer {
   background-color: #2e2f42;
