@@ -260,7 +260,7 @@ h3 {
   display: inline-block;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   width: 264px;
   height: 112px;
   padding: 0 100px;
@@ -321,24 +321,33 @@ h3 {
   gap: 24px;
 }
 .sublist-item {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  width: 40px;
+  height: 40px;
+  /* background-color: #4d5ae5; */
+}
+
+.social-links:hover,
+.social-links:focus {
+  background-color: #404bbf;
+  cursor: pointer;
+}
+
+.social-links {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
   background-color: #4d5ae5;
   border-radius: 50%;
   transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms,
     cursore cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-
-.sublist-item:hover {
-  background-color: #404bbf;
-  cursor: pointer;
-}
 .icon {
-  width: 16px;
-  height: 16px;
+  fill: #f4f4fd;
 }
 
 /* -----------PORTFOLIO------------ */
